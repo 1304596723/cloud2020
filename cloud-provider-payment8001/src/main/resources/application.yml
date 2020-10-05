@@ -9,6 +9,14 @@ spring:
     url: jdbc:mysql://localhost:3306/db2019?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: 123456
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.wqj.springcloud.entitys
+
+eureka:
+  client:
+    register-with-eureka: true #表示是否向eureka注册自己
+    service-url: # 简单理解为监控页面的地址
+      defaultZone: http://localhost:7001/eureka/
+    fetch-registry: true

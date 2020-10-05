@@ -3,9 +3,11 @@ package com.wqj.springcloud.service.ipml;
 import com.wqj.springcloud.dao.PaymentDao;
 import com.wqj.springcloud.entitys.Payment;
 import com.wqj.springcloud.service.PaymentService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
+@Service
 public class PaymentServiceImpl implements PaymentService {
 
     @Resource
